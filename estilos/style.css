@@ -4,6 +4,11 @@
 font-family: 'Roboto', sans-serif;
  700 400
 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 :root {
     font-size: 62.5%;
@@ -17,9 +22,15 @@ body {
     color: #E1E1E6;
 
     font-size: 1.2rem;
+
+    display: flex;
+    justify-content: center;
 }
 
 #container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     background-color: #1A1924;
     padding: 2.4rem 3.4rem;
 }
@@ -28,4 +39,42 @@ body {
     display: flex;
     align-items: center;
     gap: 1.6rem;
+}
+
+#infos {
+    width: 21.1rem;
+    height: 3.7rem;
+    line-height: 2rem;
+}
+
+#infos .bold {
+    color: #E1E1E6;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+#infos p {
+    color: #00B37E;
+}
+
+#infos span {
+    display: inline-block;
+    background-color: #00B37E;
+    width: 0.8rem;
+    height: 0.88rem;
+
+    border-radius: 50%;
+}
+
+#close button {
+    appearance: none;
+    border: none;
+
+    background-color: transparent;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.message-one {
+
 }
