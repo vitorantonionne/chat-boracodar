@@ -1,0 +1,31 @@
+@charset "UTF-08";
+
+/* 
+font-family: 'Roboto', sans-serif;
+ 700 400
+*/
+
+:root {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #1E1E1E;
+    color: #E1E1E6;
+
+    font-size: 1.2rem;
+}
+
+#container {
+    background-color: #1A1924;
+    padding: 2.4rem 3.4rem;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
