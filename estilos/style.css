@@ -31,6 +31,9 @@ body {
     gap: 3rem;
     background-color: #1A1924;
     padding: 2.4rem 3.4rem;
+
+    width: 80vw;
+    max-width: 800px;
 }
 
 #profile {
@@ -113,23 +116,35 @@ body {
     border-radius: 5px;
 }
 
-.send-message {
+.message-send {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #282843;
-    padding: 1.4rem 2.4rem;    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    background-color: #353250;
+    border-radius: 999rem;
 }
 
-.send-message img:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-
-    transition: .6s;
+.message-send input  {
+    background-color: transparent;
+    border: 0;
+    flex: 1;
+    color: #E1E1E6;
+    outline: none;
 }
 
-@media (min-width:1024px) {
-    #container {
-        width: 1024px;
-    }
+.message-send:focus-within {
+    outline: 2px solid white;
+}
+
+.message-send input::placeholder {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+.message-send button {
+    color: #E1E1E6;
+    font-size: 2.4rem;
+    background-color: transparent;
+    border: none;
 }
